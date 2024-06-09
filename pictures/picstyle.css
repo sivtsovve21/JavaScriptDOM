@@ -1,0 +1,107 @@
+*{
+    height: 20vh;
+    max-width: 25vw;
+    width: 100%;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+}
+.carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background: none;
+}
+
+.carousel-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-button {    
+    width: 50px;
+    height: 100px;    
+    border: solid;   
+    opacity: 50%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background: none;
+}
+
+.carousel-button:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.wrapper-1 {
+    transition: margin 1s;
+}
+
+.carousel-image {
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rbutton{
+    border-color: transparent transparent transparent #d1d5db;
+    border-width: 60px 0 60px 60px;    
+}
+
+.lbutton{
+    border-color: transparent #d1d5db transparent transparent;
+    border-width: 60px 60px 60px 0;
+}
+
+@media (max-width: 1000px) {
+    .image-container {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .button-container {
+        margin-bottom: 0px;
+    }
+
+    .carousel-button {
+        display: none;
+    }    
+}
+
+@media (max-width: 700px) {
+    .carousel-container {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    max-height: 56px;
+    max-width: 56px;
+    margin: 2PX 2PX 0 0;
+    background: none;
+}
+

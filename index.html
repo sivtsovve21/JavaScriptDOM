@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="welcome">
+        <h1 style="font-size: 48px;">WELCOME TO HUB</h1>
+        <h2 style="margin-top: 5%; font-size: 40px;">Please choose what you want to see</h2>
+    </div>
+    <div class="actives">
+        <div class="music">
+            <p>Press 'm' or click on photo to listen music</p>
+            
+        </div>
+        <div class="pictures">
+            <p>Press 'p' or click on photo to see some pictures</p>
+            
+        </div>
+        <script>
+            let mus = document.querySelector('.music')
+            let pic = document.querySelector('.pictures')
+            mus.addEventListener('click', function (e) {
+                e.preventDefault()
+                document.location.href = 'music/music.html'
+            })
+            pic.addEventListener('click', function (e) {
+                e.preventDefault()
+                document.location.href = 'pictures/pictures.html'
+            })
+            document.addEventListener('keydown', function (e) {
+                if (event.key == 'p' || event.key == 'P') {
+                    document.location.href = 'pictures/pictures.html'
+                }
+            })
+            document.addEventListener('keydown', function (e) {
+                if (event.key == 'm' || event.key == 'M') {
+                    document.location.href = 'music/music.html'
+                }
+            })
+        </script>
+</body>
+
+</html>
